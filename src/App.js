@@ -16,11 +16,27 @@ class App extends React.Component {
       data: undefined
     }
     this.tanksStatic = this.tanksStatic.bind(this);
+    this.aircraftStatic = this.aircraftStatic.bind(this);
   }
 
+  aircraftStatic = (value) => {
+    this.setState({data: value})
+  }
 
-  tanksStatic() {
-    console.log('По кнопке кликнули');
+  tanksStatic = (value) => {
+    this.setState({data: value})
+  }
+
+  submarineStatic = (value) => {
+    this.setState({data: value})
+  }
+
+  armyStatic = (value) => {
+    this.setState({data: value})
+  }
+
+  shipStatic = (value) => {
+    this.setState({data: value})
   }
 
   render() {
@@ -28,12 +44,13 @@ class App extends React.Component {
       <div className="App">
         <div className='stat-btns'>
           <Tank tanksStatic={this.tanksStatic}/>
-          <Submarine/>
-          <Aircraft/>
-          <Army/>
-          <Ship/>
+          <Submarine submarineStatic={this.submarineStatic}/>
+          <Aircraft aircraftStatic={this.aircraftStatic}/>
+          <Army armyStatic={this.armyStatic}/>
+          <Ship shipStatic={this.shipStatic}/>
         </div>
-        <Armament data={this.state.data}/>
+        <Armament data={this.state.data}
+        />
       </div>
     )
   }

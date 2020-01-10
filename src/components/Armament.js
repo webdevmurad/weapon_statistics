@@ -13,13 +13,15 @@ class Armament extends React.Component {
                 {!data ? (
                     <h2 className="head-armament">Выберите раздел</h2>                  
                     ) : (
-                        <Chart
-                            className="map"
-                            chartType="GeoChart"
-                            width="100%"
-                            height="400px"
-                            data={data}
-                        />
+                        <div>
+                            <Chart
+                                className="map"
+                                chartType="GeoChart"
+                                width="100%"
+                                height="400px"
+                                data={data}
+                            />
+                        </div>
                     )
                 }
             </div>

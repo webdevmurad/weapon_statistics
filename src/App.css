@@ -15,10 +15,14 @@
     margin: 10px;
     padding: 10px;
     color: white;
+    outline: none;
 }
 
 .btn-stat:hover {
     cursor: pointer;
+}
+.btn-stat:active {
+    background-color: #073E0A;
 }
 
 .head-armament {
