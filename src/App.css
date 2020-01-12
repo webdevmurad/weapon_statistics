@@ -29,3 +29,8 @@
     text-align: center;
     color: #109618;
 }
+
+.head-info {
+    display: flex;
+    justify-content: space-around;
+}

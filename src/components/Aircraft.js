@@ -141,11 +141,12 @@ let aircraft = [
     ["ECU", 2],
     ["Denmark", 0]
 ];
-
+    console.log(aircraft);
 class Aircraft extends React.Component {
     state = {
         data: aircraft,
     }
+
     render() {
         return (
             <div>

@@ -21,6 +21,18 @@ class Armament extends React.Component {
                                 height="400px"
                                 data={data}
                             />
+                            <div className='head-info'>
+                                <div>
+                                    {data.map((country) => (
+                                        <p>{country[0]}</p>
+                                    ))}
+                                </div>
+                                <div>
+                                    {data.map((country) => (
+                                        <p>{country[1]}</p>
+                                    ))}
+                                </div>
+                            </div>
                         </div>
                     )
                 }
